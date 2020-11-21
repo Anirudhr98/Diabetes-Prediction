@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        DIABETES PREDICTION
+    </title>
+</head>
+<body>
+
+<h1>DIABETES PREDICTION</h1>
+<form action="{{url_for('predict')}}" method="POST">
+<h3 name = 'Pregnancies' ,type ='number' >Enter No. of Pregnancies</h3>
+<input name="Pregnancies" required = "True">
+<h3 name = 'Glucose' >Enter Glucose Value</h3>
+<input name="Glucose" required = "True">
+<h3 name = 'Blood_Pressure' ,>Enter Blood_Pressure</h3>
+<input name="Blood_Pressure" required = "True">
+<h3 name = 'Skin_Thickness' >Enter Skin Thickness</h3>
+<input name="Skin" required = "True">
+<h3 name = 'Insulin' >Enter Insulin</h3>
+<input name="Insulin" required = "True">
+<h3 name = 'BMI' ,>Enter BMI</h3>
+<input name="BMI" required = "True">
+<h3 name = 'Pedigree' >Enter Diabetes_Pedigree_Function</h3>
+<input name="Pedigree" required = "True">
+<h3 name = 'Age' >Enter Age</h3>
+<input name="Age" required = "True">
+
+<br><br><button style="padding: 10px" id="sub" type="submit ">View Prediction</button>
+            <br>
+    
+    <br><br><h3>{{ prediction_text }}<h3>
+</form>
+</body>
+</html>
+
+ <style>
+        body {
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);           
+             text-align: center;
+            padding: 0px;
+        }
+      
