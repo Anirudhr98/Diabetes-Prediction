@@ -1,4 +1,4 @@
-# Diabetes Prediction System \
+# Diabetes Prediction System 
 Libraries Used : \
 pandas\
 numpy\
